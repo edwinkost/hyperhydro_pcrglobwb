@@ -27,7 +27,7 @@ core_type = "normal"
 model_script = "~/github/edwinkost/PCR-GLOBWB/model/deterministic_runner_glue_hyperhydro_november_2015.py"
 
 # configuration/ini file
-ini_file = "setup_05min_pcrglobwb_RM_4LCs_KW.ini"
+ini_file = "~/github/edwinkost/hyperhydro_pcrglobwb/05min/setup_05min_pcrglobwb_RM_4LCs_KW.ini"
 
 # name for job scripts:
 job_general_name = "calibration_a_" # example: "calibration_aa_001-022.sh"
