@@ -12,7 +12,7 @@ general_output_folder_name = 'code__a__'
 start_folder_index = 1
 
 # file name for the output table that will contain new parameters
-new_parameter_table_file_name = "table_15_november_2015_cartesius.txt"
+new_parameter_table_file_name = "table_16_november_2015_cartesius.txt"
 
 # list of existing parameters sets that have been defined in the previous runs
 existing_parameters = c(1.0, 0.0, 0.0, 1.0)                                                                                          # reference run              
@@ -105,7 +105,7 @@ job_filename = paste(job_general_name,sprintf("%03d",core_1st_job),"-",sprintf("
 
 cat("#!/bin/bash","\n",sep="",file=job_filename,append=FALSE)
 cat("#SBATCH -N 1","\n",sep="",file=job_filename,append=TRUE)
-cat("#SBATCH -t 56:00:00","\n",sep="",file=job_filename,append=TRUE)
+cat("#SBATCH -t 44:00:00","\n",sep="",file=job_filename,append=TRUE)
 cat("#SBATCH -p ",core_type,"\n",sep="",file=job_filename,append=TRUE)
 cat("\n",file=job_filename,append=TRUE)
 }
