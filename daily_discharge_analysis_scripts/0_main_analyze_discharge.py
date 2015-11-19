@@ -18,7 +18,7 @@ logger = logging.getLogger("main_script")
 # PCR-GLOBWB results: model output directory, 
 pcrglobwb_output = {}
 pcrglobwb_output["folder"]               = None # "/scratch/edwin/IWMI_run_20_nov/without_fossil_limit_with_pumping_limit_CRU/netcdf/"
-pcrglobwb_output["netcdf_file_name"]     = None # "netcdf/discharge_monthAvg_output.nc" # "discharge_monthAvg_output.nc" 
+pcrglobwb_output["netcdf_file_name"]     = None # "netcdf/discharge_dailyTot_output.nc" # "discharge_dailyTot_output.nc" 
 pcrglobwb_output["netcdf_variable_name"] = None # "discharge" 
 
 # output directory storing analysis results (results from this script)
