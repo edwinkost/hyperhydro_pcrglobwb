@@ -40,7 +40,7 @@ while start_loop < (end_code + 1):
    
    # execute the jobs
    print cmd
-   #~ os.system(cmd)
+   os.system(cmd)
    
    # starting loop for the next loope
    start_loop = i_code
