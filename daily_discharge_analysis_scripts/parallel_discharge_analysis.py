@@ -8,7 +8,7 @@ output_folder = "/projects/0/wtrcycle/users/edwin/edwin/hyperhydro_november_2015
 
 # starting and last run codes
 start_code = 0
-end_code = 100
+end_code = 624
 
 # initializing some counters
 i_code = start_code
