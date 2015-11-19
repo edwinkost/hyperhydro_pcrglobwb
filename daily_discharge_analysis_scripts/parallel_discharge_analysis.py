@@ -8,7 +8,7 @@ output_folder = "/projects/0/wtrcycle/users/edwin/edwin/hyperhydro_november_2015
 
 # starting and last run codes
 start_code = 0
-end_code = 10
+end_code = 100
 
 # initializing some counters
 i_code = start_code
@@ -21,7 +21,7 @@ while start_loop < (end_code + 1):
    
    # starting and end codes for this loop
    start_loop = i_code
-   end_loop   = max(start_loop, i_code + 2 -1)
+   end_loop   = max(start_loop, i_code + 24 -1)
    end_loop   = min(end_loop, end_code)
    end_loop   = max(start_loop, end_loop)
    
