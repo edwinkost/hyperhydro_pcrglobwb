@@ -3,4 +3,5 @@
 #SBATCH -t 0:59:00
 #SBATCH -p normal
 
-python parallel_disch_05min.sh
+python parallel_discharge_analysis.py
+
