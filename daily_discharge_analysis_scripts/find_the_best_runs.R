@@ -20,7 +20,7 @@ discharge_table = read.table(discharge_table_file, header=T, sep= ";")
 # calculate performance values
 #
 # - using ns_efficiency_log
-performance_per_river = discharge_table$ns_efficiency_log
+performance_per_river = discharge_table$ns_efficiency
 
 # - set minimum value
 min_value = 0.00
@@ -75,11 +75,11 @@ final_table = merge(parameters, summary_df, by = "run_code")
 
 ########################################################################################################################
 
-
 # order it based on performance values
 final_table = final_table[order(-final_table$performance), ]
 final_table[1:20,]
 
-
+# write it to a txt file
+write.table()
 
 
