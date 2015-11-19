@@ -26,7 +26,7 @@ while start_loop < (end_code + 1):
    end_loop   = max(start_loop, end_loop)
    
    # generating jobs for this loop
-   for i_code in (start_loop, end_loop + 1, 1):
+   for i_code in range(start_loop, end_loop + 1, 1):
    
       cmd += "python 0_main_analyze_discharge.py " + str(output_folder) + str(i_code)
       cmd = cmd+" & "
