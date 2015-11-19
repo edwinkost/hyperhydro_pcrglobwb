@@ -74,7 +74,7 @@ def main():
     logger = Logger(analysisOutputDir)
     #
     # daily discharge evaluation (based on GRDC data)
-    dischargeEvaluation = dischargeDailyGRDC.DischargeDailyEvaluation(pcrglobwb_output["folder"],\
+    dischargeEvaluation = dischargeDailyGRDC.DailyDischargeEvaluation(pcrglobwb_output["folder"],\
                                                                       startDate, endDate, temporary_directory)
     # - get GRDC attributes of all stations:
     dischargeEvaluation.get_grdc_attributes(directoryGRDC = globalDirectoryGRDC)
