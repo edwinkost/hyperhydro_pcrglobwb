@@ -35,7 +35,7 @@ while start_loop < (end_code + 1)
    
    # execute the jobs
    print cmd
-   os.system(cmd)
+   #~ os.system(cmd)
    
    # starting code for the next loop
    start_loop = i_code
