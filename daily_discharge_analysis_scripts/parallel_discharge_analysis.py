@@ -29,7 +29,7 @@ while start_loop < (end_code + 1):
    
       cmd += "python 0_main_analyze_discharge.py " + str(output_folder) + str(i_code)
       cmd = cmd+" & "
-      i_code += 1
+      i_code = i_code + 1
    
    # don't foget to add the following line
    cmd = cmd + "wait"       
@@ -39,8 +39,5 @@ while start_loop < (end_code + 1):
    #~ os.system(cmd)
    
    print i_code
-   
-   # starting code for the next loop
-   start_loop = i_code
 
       
