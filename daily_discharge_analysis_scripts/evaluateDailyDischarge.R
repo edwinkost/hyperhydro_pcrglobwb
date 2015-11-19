@@ -4,7 +4,7 @@
 rm(list=ls());ls()
 
 # packages needed:
-require('ggplot2'); require('RColorBrewer')
+require('scales'); require('ggplot2'); require('RColorBrewer')
 
 # set minimum number of pairs that will be analyzed:
 minPairs = 12 # days
