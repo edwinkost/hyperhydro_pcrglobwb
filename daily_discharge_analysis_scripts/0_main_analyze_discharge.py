@@ -57,7 +57,7 @@ def main():
     ####################################################################################################
     #
     # make analysisOutputDir
-    analysisOutputDir = globalAnalysisOutputDir+"/daily_discharge/"
+    analysisOutputDir = globalAnalysisOutputDir+"/daily_discharge_2003/"
     try:
         os.makedirs(analysisOutputDir) 
     except:

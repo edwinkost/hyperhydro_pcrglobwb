@@ -249,10 +249,10 @@ y_max_sim = max( mergedTable$simulation,na.rm=T)
 y_max = max(y_max_obs, y_max_sim)
 if (y_max > 100) {y_max = ceiling((y_max+75)/100)*100} else {y_max = 100}
 #
-x_min = min(mergedTable$date,na.rm=T) - 60
-x_max = max(mergedTable$date,na.rm=T) + 60
+x_min = min(mergedTable$date,na.rm=T) - 30
+x_max = max(mergedTable$date,na.rm=T) + 30
 #
-x_info_text = x_min
+x_info_text = x_min - 0.1 * (x_max - x_min)
 
 outplott <- ggplot()
 outplott <- outplott +
