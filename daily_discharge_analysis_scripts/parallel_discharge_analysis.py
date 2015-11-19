@@ -13,7 +13,7 @@ end_code = 10
 # initializing the counter
 i_code = start_code
 
-while start_loop < (end_code + 1) 
+while start_loop < (end_code + 1):
    
    # initiate command lines
    cmd = ''
