@@ -4,7 +4,7 @@
 import os
 
 # output folder location:
-output_folder = "/projects/0/wtrcycle/users/edwin/edwin/hyperhydro_november_2015/RhineMeuse/05min/code__a__"
+output_folder = "/projects/0/wtrcycle/users/edwin/edwin/hyperhydro_november_2015/RhineMeuse/30min/code__a__"
 
 # starting and last run codes
 start_code = 0
