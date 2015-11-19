@@ -23,6 +23,7 @@ while start_loop < (end_code + 1):
    start_loop = i_code
    end_loop   = max(start_loop, i_code + 2 -1)
    end_loop   = min(end_loop, end_code)
+   end_loop   = max(start_loop, end_loop)
    
    # generating jobs for this loop
    for i_code in (start_loop, end_loop + 1, 1):
