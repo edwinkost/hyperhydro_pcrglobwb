@@ -3,7 +3,7 @@
 rm(list=ls()); # ls()
 
 # global folder for all scenarios
-global_folder = "/projects/0/wtrcycle/users/edwin/edwin/hyperhydro_november_2015/RhineMeuse/05min/"
+global_folder = "/projects/0/wtrcycle/users/edwin/edwin/hyperhydro_november_2015/RhineMeuse/30min/"
 
 first_run_to_be_analyzed = TRUE
 for (i in seq(0,624,1)) {
@@ -15,6 +15,8 @@ run_code = paste("code__a__",i,sep="")
 discharge_table_file = paste(global_folder, run_code,"/analysis/daily_discharge_2003/summary.txt",sep="") 
 discharge_table = read.table(discharge_table_file, header=T, sep= ";")
 
+#~ # select only a specific station:
+#~ discharge_table = discharge_table[which(discharge_table$station_name == "LOBITH"), ]
 
 ######################################################################################################
 # calculate performance values
@@ -27,7 +29,9 @@ min_value = 0.00
 performance_per_river[which(performance_per_river < min_value)] = 0.0
 
 # - average performance value
-performance = mean(performance_per_river, na.rm = T)
+performance = sum(performance_per_river * discharge_table$grdc_catchment_area_in_km2, na.rm = T)
+performance = performance / sum(discharge_table$grdc_catchment_area_in_km2, na.rm = T)
+
 print(performance)
 
 #

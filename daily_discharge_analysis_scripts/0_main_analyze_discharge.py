@@ -35,8 +35,8 @@ except:
     pass 
 
 # time range for analyses
-startDate = "2003-01-01" # None # "1960-01-31" #YYYY-MM-DD # None 
-endDate   = "2003-12-31" # None # "2010-12-31" #YYYY-MM-DD # None 
+startDate = None # "2003-01-01" # None # "1960-01-31" #YYYY-MM-DD # None 
+endDate   = None # "2003-12-31" # None # "2010-12-31" #YYYY-MM-DD # None 
 
 # directory for GRDC files:
 globalDirectoryGRDC = "/home/edwin/github/edwinkost/hyperhydro_pcrglobwb/daily_discharge_analysis_scripts/rhine_daily_discharge_data/"
@@ -57,7 +57,7 @@ def main():
     ####################################################################################################
     #
     # make analysisOutputDir
-    analysisOutputDir = globalAnalysisOutputDir+"/daily_discharge_2003/"
+    analysisOutputDir = globalAnalysisOutputDir+"/daily_discharge/"
     try:
         os.makedirs(analysisOutputDir) 
     except:
