@@ -12,7 +12,7 @@ ls
 run_code = paste("code__a__",i,sep="")
 
 # read table containing discharge analysis
-discharge_table_file = paste(global_folder, run_code,"/analysis/monthly_discharge/summary.txt",sep="") 
+discharge_table_file = paste(global_folder, run_code,"/analysis/daily_discharge_2003/summary.txt",sep="") 
 discharge_table = read.table(discharge_table_file, header=T, sep= ";")
 
 
