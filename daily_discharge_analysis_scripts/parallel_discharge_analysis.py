@@ -10,6 +10,9 @@ output_folder = "/projects/0/wtrcycle/users/edwin/edwin/hyperhydro_november_2015
 start_code = 0
 end_code = 624
 
+# number of process within a loop
+n_process = 36
+
 # initializing some counters
 i_code = start_code
 start_loop = start_code
@@ -21,7 +24,7 @@ while start_loop < (end_code + 1):
    
    # starting and end codes for this loop
    start_loop = i_code
-   end_loop   = max(start_loop, i_code + 24 -1)
+   end_loop   = max(start_loop, i_code + n_process -1)
    end_loop   = min(end_loop, end_code)
    end_loop   = max(start_loop, end_loop)
    
@@ -37,9 +40,8 @@ while start_loop < (end_code + 1):
    
    # execute the jobs
    print cmd
-   #~ os.system(cmd)
+   os.system(cmd)
    
    # starting loop for the next loope
    start_loop = i_code
-
-      
+     
