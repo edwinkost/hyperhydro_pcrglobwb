@@ -10,8 +10,9 @@ output_folder = "/projects/0/wtrcycle/users/edwin/edwin/hyperhydro_november_2015
 start_code = 0
 end_code = 10
 
-# initializing the counter
+# initializing some counters
 i_code = start_code
+start_loop = start_code
 
 while start_loop < (end_code + 1):
    
