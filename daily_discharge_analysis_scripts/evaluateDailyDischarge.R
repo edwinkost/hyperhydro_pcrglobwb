@@ -250,7 +250,7 @@ y_max = max(y_max_obs, y_max_sim)
 if (y_max > 100) {y_max = ceiling((y_max+75)/100)*100} else {y_max = 100}
 #
 x_min = min(mergedTable$date,na.rm=T) # - 365*0.5
-x_max = max(mergedTable$date,na.rm=T)
+x_max = max(mergedTable$date,na.rm=T) + 1
 #
 x_info_text = x_min - 365*0.5
 
