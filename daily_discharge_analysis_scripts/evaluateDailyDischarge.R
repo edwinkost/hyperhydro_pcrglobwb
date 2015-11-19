@@ -285,7 +285,7 @@ outplott <- outplott +
  geom_text(aes(x = x_info_text, y = 0.00*y_max, label = paste(" correlation = ",round(correlation,2),sep="")), size = 2.5,hjust = 0) +
 #~ #
  scale_y_continuous("discharge",limits=c(y_min,y_max)) +
- scale_x_date('',limits=c(x_min,x_max)) +
+ scale_x_date_time('',limits=c(x_min,x_max)) +
  theme(legend.position = "none") 
 #ggsave("screen.pdf", plot = outplott,width=30,height=8.25,units='cm')
  ggsave(paste(outputFile,".pdf",sep=""), plot = outplott,width=27,height=7,units='cm')
