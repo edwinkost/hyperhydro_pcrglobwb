@@ -253,6 +253,7 @@ x_min = min(mergedTable$date,na.rm=T) - 365*1
 x_max = max(mergedTable$date,na.rm=T)
 #
 x_info_text = x_min - 365*0.5
+x_info_text = x_min
 
 outplott <- ggplot()
 outplott <- outplott +
