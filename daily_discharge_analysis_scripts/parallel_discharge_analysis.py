@@ -38,6 +38,8 @@ while start_loop < (end_code + 1):
    print cmd
    #~ os.system(cmd)
    
+   print i_code
+   
    # starting code for the next loop
    start_loop = i_code
 
