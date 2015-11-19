@@ -233,7 +233,7 @@ class DailyDischargeEvaluation(object):
         cellArea = vos.readPCRmapClone(cellAreaMapFileName, \
                                        globalCloneMapFileName, \
                                        tmpDir)
-        cellArea = pcr.scalar(pcr.readmap(cellArea))
+        cellArea = pcr.scalar(cellArea)
         
         # The landMaskClass map contains the nominal classes for all landmask regions. 
         landMaskClass = pcr.nominal(cloneMap)  # default: if catchmentClassFileName is not given
